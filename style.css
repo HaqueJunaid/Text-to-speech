@@ -1,0 +1,99 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html,
+body {
+    width: 100%;
+    height: 100%;
+    font-family: Poppins;
+}
+
+.main {
+    width: 100%;
+    height: 100vh;
+    background: linear-gradient(25deg, rgb(44, 0, 221), rgb(218, 0, 138)190%);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.card {
+    width: 100%;
+    padding: 1rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.card h1 {
+    text-align: center;
+    font-size: 3.5rem;
+    font-weight: 500;
+    color: #fff;
+}
+
+h1>span {
+    color: rgb(255, 0, 76);
+}
+
+textarea {
+    margin-top: 2rem;
+    margin-bottom: 2rem;
+    outline: none;
+    border: none;
+    width: 50rem;
+    height: 20rem;
+    background-color: #aa9bff90;
+    padding: 16px;
+    color: #fff;
+    font-family: Poppins;
+    border-radius: 10px;
+    letter-spacing: 0.5px;
+    font-size: 18px;
+}
+
+textarea::placeholder {
+    color: #fff;
+}
+
+button {
+    display: inline-block;
+    width: fit-content;
+    padding: 0.6rem 1.5rem;
+    border-radius: 5rem;
+    line-height: 1;
+    background-color: rgb(255, 0, 76);
+    color: #fff;
+    border: none;
+    outline: none;
+    font-size: 18px;
+    font-family: Poppins;
+    font-weight: 400;
+}
+
+@media (max-width: 600px) {
+    .main {
+        padding: 1rem;
+    }
+
+    .card h1 {
+        font-size: 2.5rem;
+        line-height: 1.2;
+        letter-spacing: 0;
+    }
+
+    textarea {
+        margin-top: 2.5rem;
+        width: 95%;
+        height: 30rem;
+        margin-bottom: 1.5rem;
+    }
+
+    button {
+        font-size: 1.5rem;
+        padding: 0.8rem 1.8rem;
+    }
+}
